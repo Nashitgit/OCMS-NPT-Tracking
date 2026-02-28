@@ -10,3 +10,18 @@ p, li, .body-text {
     line-height: 1.6; /* Adds breathing room between lines */
     color: #4A5568; /* Use a soft dark grey for better readability */
 }
+
+    /* 1. Define the custom class */
+    .hover-glow {
+        transition: all 0.3s ease-in-out; /* Makes the glow smooth */
+        cursor: pointer;
+        border: 1px solid rgba(0,0,0,.125); /* Default Bootstrap border */
+    }
+
+    /* 2. Trigger the glow on hover */
+    .hover-glow:hover {
+        transform: translateY(-5px); /* Lifts the card */
+        border-color: #198754 !important; /* Green border */
+        /* This creates the 'Glow' effect using box-shadow */
+        box-shadow: 0 10px 20px rgba(25, 135, 84, 0.4) !important;
+    }

@@ -15,13 +15,30 @@ p, li, .body-text {
     .hover-glow {
         transition: all 0.3s ease-in-out; /* Makes the glow smooth */
         cursor: pointer;
-        border: 1px solid rgba(0,0,0,.125); /* Default Bootstrap border */
+        /* border: 1px solid rgba(0,0,0,.125);  */
+        border: 1px solid #0d6efd; /* Default Bootstrap border */
+        background-color: #fff;
     }
 
     /* 2. Trigger the glow on hover */
     .hover-glow:hover {
         transform: translateY(-5px); /* Lifts the card */
-        border-color: #198754 !important; /* Green border */
+        border-color: #0d6efd !important;
+        /* This creates the 'Glow' effect using box-shadow */
+        box-shadow: 0 10px 20px rgba(13, 110, 253, 0.4) !important;
+    }
+
+     .hover-glow-green {
+        transition: all 0.3s ease-in-out; /* Makes the glow smooth */
+        cursor: pointer;
+        /* border: 1px solid rgba(0,0,0,.125);  */
+        border: 1px solid #198754; /* Default Bootstrap border */
+        background-color: #fff;
+    }
+
+    .hover-glow-green:hover {
+        transform: translateY(-5px); /* Lifts the card */
+        border-color: #198754 !important; 
         /* This creates the 'Glow' effect using box-shadow */
         box-shadow: 0 10px 20px rgba(25, 135, 84, 0.4) !important;
     }
